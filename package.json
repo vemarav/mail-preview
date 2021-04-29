@@ -1,0 +1,21 @@
+{
+  "name": "mail-preview",
+  "version": "1.0.0",
+  "description": "A mail preview project just do design html email templates",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch index.js --watch mailer.js"
+  },
+  "repository": "https://github.com/vemarav/mail-preview.git",
+  "author": "Aravind Vemula",
+  "license": "yes",
+  "private": true,
+  "dependencies": {
+    "email-templates": "^8.0.4",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
