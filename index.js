@@ -1,5 +1,6 @@
 const Mailer = require("./mailer");
 const express = require("express");
+const open = require("open");
 
 const app = express();
 
@@ -19,3 +20,4 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(3000);
+open("http://localhost:3000");
