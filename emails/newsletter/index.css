@@ -1,13 +1,34 @@
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 5rem !important;
-    color: blue;
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    --post-title: #ffffff;
+    --post-content: rgb(187, 187, 187);
   }
 }
 
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 1rem !important;
-    color: red;
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #222222;
+    --post-title: #222222;
+    --post-content: rgb(86, 86, 86);
   }
+}
+
+.poppins {
+  font-family: Poppins;
+}
+
+.roboto {
+  font-family: Roboto;
+}
+
+.jost {
+  font-family: Jost;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
 }
