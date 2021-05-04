@@ -22,9 +22,9 @@ html
           tbody
             tr
               td
-                h1(class="post-title poppins")=post['title']
-                div(class="post-image" style="background-image: url("+post['imageUrl']+");")
-                  img(src=post['imageUrl'] alt=post['title'] style="display:none;")
+                a(class="post-title poppins" href=post['dynamicLink'])=post['title']
+                a(href=post['dynamicLink'])
+                  div(style="background-image:url("+post['imageUrl']+");"+"height:350px;width:100%;background-size:cover;background-position:center;margin-bottom:1rem;")
                 div(class="post-content jost")
                   each line in post['content'].split("\n")
                     = line
@@ -37,8 +37,10 @@ html
                 div(class="tagline poppins") Tech News in 100 Words
                 br
                 div(class="download-links")
-                  img(class="store-icon" src="/assets/images/appstore.svg" alt="get GIST on app store")
-                  img(class="store-icon" src="/assets/images/googleplay.svg" alt="get GIST on play store")
+                  a(href="https://gistwebsite.page.link/newsletter")
+                    img(class="store-icon" src="/assets/images/appstore.svg" alt="get GIST on app store")
+                  a(href="https://gistwebsite.page.link/newsletter")
+                    img(class="store-icon" src="/assets/images/googleplay.svg" alt="get GIST on play store")
                 div(class="sent roboto")
                   | Sent by &nbsp;
                   <a href="https://gist.website">GIST</a>

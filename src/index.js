@@ -19,7 +19,7 @@ const newsletter = async (req, res) => {
         {
           id: 778,
           imageUrl:
-            "http://res.cloudinary.com/stockspot/image/upload/v1620073350/u99vbq7r3h8gzt6xqvxy.jpg",
+            "https://res.cloudinary.com/stockspot/image/upload/v1620073350/u99vbq7r3h8gzt6xqvxy.jpg",
           title:
             "Kroger Begins Testing Deliveries By Drone For Baby Products & S’mores",
           content:
@@ -29,7 +29,7 @@ const newsletter = async (req, res) => {
         {
           id: 775,
           imageUrl:
-            "http://res.cloudinary.com/stockspot/image/upload/v1620064719/cxry1blva62r47tkfdnk.jpg",
+            "https://res.cloudinary.com/stockspot/image/upload/v1620064719/cxry1blva62r47tkfdnk.jpg",
           title:
             "SpaceX Astronauts Make A Splash As They Return From An ISS Mission",
           content:
@@ -39,7 +39,7 @@ const newsletter = async (req, res) => {
         {
           id: 777,
           imageUrl:
-            "http://res.cloudinary.com/stockspot/image/upload/v1620050945/wdezqxqkwrhvvwttp88u.jpg",
+            "https://res.cloudinary.com/stockspot/image/upload/v1620050945/wdezqxqkwrhvvwttp88u.jpg",
           title: "Emotion Recognition AI For Animals Invented",
           content:
             "A researcher published an article detailing a system by which facial recognition AI could be used to observe the emotions of farm animals.\n\nIt explains the system as a high-value, low-impact machine learning paradigm where farmers can measure livestock comfort in real-time using cameras instead of hormone sampling. They are trying to tell what mood the animals are in.",
@@ -48,7 +48,7 @@ const newsletter = async (req, res) => {
         {
           id: 776,
           imageUrl:
-            "http://res.cloudinary.com/stockspot/image/upload/v1620056504/pgpsojuidc8dq2qkackt.jpg",
+            "https://res.cloudinary.com/stockspot/image/upload/v1620056504/pgpsojuidc8dq2qkackt.jpg",
           title: "Teampay To Work With Silicon Valley Bank",
           content:
             "Spend management services provider Teampay announced its platform will work with Silicon Valley Bank’s (SVB’s) Innovators Card.\n\nTeampay customers can now pull their existing SVB credit line through the Innovators Card while using all the advantages of Teampay’s spend management platform. The SVB virtual cards are regulated by amount and vendor to assure compliance.",
@@ -57,7 +57,7 @@ const newsletter = async (req, res) => {
         {
           id: 774,
           imageUrl:
-            "http://res.cloudinary.com/stockspot/image/upload/v1620049532/dhs3tbxducdoqgfpmbfn.jpg",
+            "https://res.cloudinary.com/stockspot/image/upload/v1620049532/dhs3tbxducdoqgfpmbfn.jpg",
           title:
             "A Robotics Challenge That Could Change Our Perspective Towards AI",
           content:
