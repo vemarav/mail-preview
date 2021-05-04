@@ -24,7 +24,7 @@ html
               td
                 a(class="post-title poppins" href=post['dynamicLink'])=post['title']
                 a(href=post['dynamicLink'])
-                  div(style="background-image:url("+post['imageUrl']+");"+"height:350px;width:100%;background-size:cover;background-position:center;margin-bottom:1rem;")
+                  div(class="post-image" style="background-image:url("+post['imageUrl']+");"+"height:350px;width:100%;background-size:cover;background-position:center;margin-bottom:1rem;")
                 div(class="post-content jost")
                   each line in post['content'].split("\n")
                     = line
