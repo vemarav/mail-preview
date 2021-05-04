@@ -1,11 +1,11 @@
 const Mailer = require("./mailer");
 const express = require("express");
-// const serverless = require("serverless-http");
 
 const app = express();
-// const router = express.Router();
+const router = express.Router();
+const port = process.env.PORT || 3001;
 
-app.get("/newsletter", async (req, res) => {
+const newsletter = async (req, res) => {
   const message = {
     from: "sender@domain.com",
     to: "receiver@domain.com",
@@ -73,13 +73,12 @@ app.get("/newsletter", async (req, res) => {
   } catch (e) {
     res.send(`500 Oops Gotcha!\n${e}`);
   }
-});
+};
 
-// app.use("/.netlify/functions/api", router);
+router.get("/", newsletter);
+router.get("/newsletter", newsletter);
 
-// app.use("/", router);
-
-// module.exports = app;
-// module.exports.handler = serverless(app);
-
-app.listen(3000);
+app.use("/", router);
+app.listen(port, () =>
+  console.log(`app listening on port http://localhost:${port}/newsletter`)
+);

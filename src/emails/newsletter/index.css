@@ -5,14 +5,18 @@ body {
   --personal: #888888;
   --post-title: #333333;
   --post-content: rgb(86, 86, 86);
+  --border-color: #e5e5e5;
 }
 
 @media (prefers-color-scheme: dark) {
   /* body {
     background-color: #000000 !important;
     color: #ffffff !important;
-    --post-title: #ffffff !important;
-    --post-content: rgb(187, 187, 187) !important;
+    --app-desc: #bbbbbb !important;
+    --personal: #aaaaaa !important;
+    --post-title: #efefef !important;
+    --post-content: rgb(187 187 187) !important;
+    --border-color: #252525 !important;
   } */
 }
 
@@ -62,7 +66,7 @@ table {
 table tbody {
   display: inherit;
   border-radius: 1rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--border-color);
 }
 
 table tbody tr {
@@ -82,7 +86,7 @@ img {
 .personal {
   padding: 1rem;
   text-align: left;
-  border-top: 0.5px solid #e5e5e5;
+  border-top: 1px solid var(--border-color);
   color: var(--personal);
 }
 
@@ -98,10 +102,8 @@ img {
   display: inherit;
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 300px;
   margin-bottom: 1rem;
-  border: 0.5px solid #e5e5e5;
 }
 
 .post-content {

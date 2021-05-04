@@ -5,20 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "start": "node src/index.js"
   },
   "repository": "https://github.com/vemarav/mail-preview.git",
   "author": "Aravind Vemula",
   "license": "yes",
   "private": true,
   "dependencies": {
-    "email-templates": "^8.0.4",
-    "express": "^4.17.1",
-    "netlify-lambda": "^1.4.3",
     "pug": "^3.0.2",
-    "serverless-http": "^1.9.1",
-    "velocity": "^0.7.2"
+    "email-templates": "^8.0.4",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
