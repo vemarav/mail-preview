@@ -2,12 +2,12 @@ const TemplateEngine = require("email-templates");
 const path = require("path");
 
 const Mailer = {
-  send: async ({ message }) => {
+  newsletter: async ({ message }) => {
     console.log({ path });
     try {
       const { from, to, subject, data } = message;
       const engine = new TemplateEngine({
-        views: { root: "./emails" },
+        views: { root: "./src/emails" },
         preview: true,
         juiceResources: {
           preserveImportant: true,
@@ -20,7 +20,7 @@ const Mailer = {
             // `<link rel="stylesheet" href="style.css" data-inline="data-inline">`
             // then this assumes that the file `build/style.css` exists
             //
-            relativeTo: path.resolve("./emails"),
+            relativeTo: path.resolve("./src/emails"),
             //
             // but you might want to change it to something like:
             // relativeTo: path.join(__dirname, '..', 'assets')
