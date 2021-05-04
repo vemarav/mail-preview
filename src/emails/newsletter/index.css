@@ -36,6 +36,7 @@ body {
 .roboto {
   font-family: Roboto;
   font-size: inherit;
+  line-height: 1.5;
 }
 
 .jost {
@@ -110,4 +111,36 @@ img {
   font-size: 1rem;
   padding: 0 1rem 1rem 1rem;
   color: var(--post-content);
+}
+
+.footer {
+  padding: 2rem 1rem !important;
+  width: inherit;
+  font-size: 0.8rem;
+  padding: 1rem;
+  color: var(--app-desc);
+}
+
+.tagline {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.store-icon {
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.sent {
+  padding: 1rem;
+}
+
+.terms {
+  padding: 0.5rem 1rem 0 0;
 }
