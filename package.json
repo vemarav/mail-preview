@@ -1,6 +1,6 @@
 {
   "name": "mail-preview",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "A mail preview project just do design html email templates",
   "main": "index.js",
   "scripts": {

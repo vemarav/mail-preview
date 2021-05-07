@@ -8,7 +8,16 @@ app.get("/", (req, res) => {
   res.send(`
     <html>
     <head>
-    <style> a {display: block;} </style>
+    <title>Mail Preview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/17309962?v=4" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style> 
+      * {font-family: 'Open Sans'}
+      a {display: block;font-size:1.3rem;text-decoration:none;color:#0275d8;} 
+      a:hover, a:active, a:visited{color:#7f00ff;} 
+    </style>
     </head>
     <body>
     <h1>List of Email Templates</h1>
