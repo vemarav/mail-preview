@@ -1,0 +1,80 @@
+.poppins {
+  font-family: Poppins, "Open Sans", sans-serif;
+  font-size: inherit;
+  line-height: 1.35;
+}
+
+.roboto {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.jost {
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  font-size: inherit;
+  line-height: 1.4;
+}
+
+.background {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {
+  margin: auto;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.app-desc {
+  color: #373737;
+  text-align: left;
+  padding: 1rem;
+}
+
+.personal {
+  color: #888888;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 0.5rem;
+}
+
+.border {
+  border: 1px solid #e5e5e5;
+  border-radius: 1rem;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.logo {
+  margin: auto;
+  width: 116px;
+  height: 100px;
+  display: block;
+  padding: 1.5rem 0;
+  background-image: url("https://gist.website/images/logo.svg");
+  background-size: cover;
+}
+
+@media (prefers-color-scheme: dark) {
+  .background {
+    background-color: #000000 !important;
+  }
+
+  .app-desc {
+    color: #bbbbbb !important;
+  }
+
+  .personal {
+    color: #aaaaaa !important;
+    border-color: #2c2c2c !important;
+  }
+
+  .border {
+    border: 1px solid #2c2c2c !important;
+    border-radius: 1rem !important;
+  }
+}
