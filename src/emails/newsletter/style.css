@@ -19,6 +19,7 @@
 .background {
   min-height: 100vh;
   background-color: #ffffff;
+  color: #222222;
 }
 
 .container {
@@ -28,9 +29,8 @@
 }
 
 .app-desc {
-  color: #373737;
+  color: #656565;
   text-align: left;
-  padding: 1rem;
 }
 
 .personal {
@@ -49,14 +49,62 @@
   padding: 1rem;
 }
 
-.logo {
-  margin: auto;
-  width: 116px;
-  height: 100px;
+a {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.post-card {
+  margin: 1.5rem 0;
+}
+
+.post-title {
   display: block;
-  padding: 1.5rem 0;
-  background-image: url("https://gist.website/images/logo.svg");
-  background-size: cover;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 900;
+  color: #222222;
+}
+
+.post-title:hover {
+  color: #0275d8 !important;
+}
+
+.post-content {
+  padding: 1rem;
+  color: #656565;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem !important;
+  font-size: 0.8rem;
+}
+
+.tagline {
+  line-height: 1.35;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #888888;
+}
+
+.sent {
+  color: #656565;
+  padding: 1rem;
+}
+
+.terms a {
+  color: #656565;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: #0275d8 !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,17 +112,40 @@
     background-color: #000000 !important;
   }
 
-  .app-desc {
-    color: #bbbbbb !important;
+  .border {
+    border: 1px solid #333333 !important;
   }
 
   .personal {
     color: #aaaaaa !important;
-    border-color: #2c2c2c !important;
+    border-top: 1px solid #222222 !important;
   }
 
-  .border {
-    border: 1px solid #2c2c2c !important;
-    border-radius: 1rem !important;
+  .app-desc {
+    color: #bbbbbb !important;
+  }
+
+  .post-title {
+    color: #efefef !important;
+  }
+
+  .post-content {
+    color: rgb(187, 187, 187) !important;
+  }
+
+  .tagline {
+    color: #efefef !important;
+  }
+
+  .sent {
+    color: rgb(187, 187, 187) !important;
+  }
+
+  .terms {
+    color: rgb(187, 187, 187) !important;
+  }
+
+  .terms a {
+    color: rgb(187, 187, 187) !important;
   }
 }
