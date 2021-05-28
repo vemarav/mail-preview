@@ -1,0 +1,48 @@
+html 
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/assets/styles/reset.css", data-inline="true")
+    link(rel="stylesheet", href="newsletter/style.css", data-inline="true")
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap")
+  body
+    div(class="background")
+      div(class="container")
+        div(class="border")
+          div(class="card")
+            div(style="background-image:url(\"https://res.cloudinary.com/brewhackers-technologies/image/upload/v1622169694/marketing/logo_cupyly.png\");margin: auto;width: 5rem;height: 5rem;padding: 1.5rem 0;background-size:contain;background-position:center;background-repeat:no-repeat;")
+            p(class="jost app-desc")
+              | We understand you are busy, so we bring to you the best news of the tech world curated from trustworthy sources, summarized in under 100 words. Stay informed in under 5 minutes
+          h1(class="personal roboto") News for #{user['name']} 
+              
+        each post in posts
+          div(class="post-card border")
+            a(class="post-title poppins" href=post['dynamicLink'])=post['title']
+            a(href=post['dynamicLink'])
+              div(class="post-image" style="background-image:url("+post['imageUrl']+");"+"height:350px;width:100%;background-size:cover;background-position:center;")
+            div(class="post-content jost")
+              each line in post['content'].split("\n")
+                = line
+                <br>
+      
+        div(class="footer border")
+          div(class="tagline poppins") Tech News in 100 Words
+          br
+          div(class="download-links")
+            a(href="https://gistwebsite.page.link/newsletter")
+              div(style="display:inline-block;background-image:url(\"https://res.cloudinary.com/brewhackers-technologies/image/upload/v1614373207/marketing/appstore_do2uuw_ek5ues.png\");margin:auto;width:5.12rem;height:2rem;padding:.5rem;background-size:contain;background-position:center;background-repeat:no-repeat;")
+            a(href="https://gistwebsite.page.link/newsletter")
+              div(style="display:inline-block;background-image:url(\"https://res.cloudinary.com/brewhackers-technologies/image/upload/v1622169694/marketing/google-playstore_zlvqrh.png\");margin:auto;width:5.12rem;height:2rem;padding:.5rem;background-size:contain;background-position:center;background-repeat:no-repeat;")
+          div(class="sent roboto")
+            | Sent by &nbsp;
+            <a href="https://gist.website">GIST</a>
+            span &nbsp; · &nbsp;
+            | 1st Floor, Raghuma Towers, Phase 2, Kaveri Hills, Madhapur, Telangana 500081
+            br
+            br
+            span <a href="https://gist.website/unsubscribe?email=#{user['email']}}">Unsubscribe</a> from this type of email
+          div(class="terms roboto")
+              <a href="https://gist.website/#/privacy-policy">Privacy policy</a> · 
+              <a href="https://gist.website/#/terms-of-service">Terms of service</a>
+      
+    
