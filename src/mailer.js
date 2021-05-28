@@ -14,7 +14,7 @@ const sendMail = async (html) => {
 
   let info = await transporter.sendMail({
     from: process.env.EMAIL_ID,
-    to: process.env.EMAIL_ID,
+    to: ["aravind@brewhackers.com", "yatin@brewhackers.com", "sumit@brewhackers.com"],
     subject: "GIST | Daily Digest",
     html: html,
   });
@@ -64,7 +64,7 @@ const Mailer = {
       const { from, to, subject, data } = message;
       const engine = new TemplateEngine({
         views: { root: "./src/emails" },
-        preview: true,
+        preview: false,
         juiceResources: {
           preserveImportant: true,
           webResources: {
@@ -74,16 +74,21 @@ const Mailer = {
         },
       });
 
-      // await engine.send({
-      //   message: {
-      //     from,
-      //     to,
-      //     subject,
-      //     html: await engine.render("newsletter", data),
-      //   },
-      // });
-
-      return await engine.render("welcome", data);
+      console.time();
+      const {
+        originalMessage: { html },
+      } = await engine.send({
+        template: "welcome",
+        message: {
+          from,
+          to,
+          subject,
+        },
+        locals: data,
+      });
+      console.timeEnd();
+      console.log(await sendMail(html));
+      return html;
     } catch (e) {
       console.error(e);
     }
